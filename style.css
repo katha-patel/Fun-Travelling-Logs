@@ -1,0 +1,81 @@
+
+
+  .bdy{
+    background:linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,.05));
+    /*background-image: url("https://wallpapercave.com/wp/wp5323098.jpg");*/
+    background-image: url("https://i.pinimg.com/originals/34/4b/55/344b55f63b72df63d78900c900451ef2.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .opbox{
+    background-color: rgba(211,211,211,0.3);
+    /*background-origin:padding-padding-box;|border-box|content-box|initial|center;*/
+    padding: 50px;
+  }
+  input[type='text'],input[type='password']{
+    color:black;
+    background : transparent;
+    border:0;
+    outline:0;
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+    padding: 10px;
+    transition:0.5s;
+    letter-spacing: 1px
+  }
+  input[type="submit"]{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 10px 25px;
+    transition: 0.5s;
+  }
+  input[type="submit"]:hover{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+  }
+
+  .section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .section1 {
+    z-index: 1;
+  }
+
+  .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .color-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(211,211,211);
+    opacity: 0.1;
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+    }
+  @media screen and (max-width: 600px) {
+    .text {
+      font-size: 16px;
+    }
+  }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Travelling</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="section">
+			<div class="section1">
+				<center>
+				<form name="loginform" onsubmit="return validateForm()" action="index.html" method="post">
+				  <label for="username">Username:</label>
+				  <input type="text" placeholder="Enter Username" id="username" name="username" required>
+				  <br><br>
+				  <label for="pwd">Password :</label>
+				  <input type="password" placeholder="Enter Password" id="pwd" name="pwd" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[$&+,:;=?@#|'<>.^*()%!-]).{11,}" title="Must contain at least one number and one uppercase and lowercase letter and one special letter, and at least 11 or more characters" required>
+					<span id = "message" style="color:red"> </span> <br><br>
+				  <br><br>
+				  <input class="btn btn-primary" type="submit" value="Login" name="submit">
+				 </form>
+			 </center>
+			 </div>
+        <div class="video-container">
+            <div class="color-overlay"></div>
+            <video autoplay loop muted>
+                <source src="video2.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </div>
+	</body>
+	<script>
+
+	    function validateForm()
+	    {
+	      var un = document.forms["loginform"]["username"].value;
+	      var pw = document.forms["loginform"]["pwd"].value;
+
+	      if ((un == "katha") && (pw == "Kathapatel@91"))
+	      {
+	         return true;
+	      }
+	      else
+	      { alert("Incorrect Credentials");
+	        return false;
+	      }
+	    }
+	    </script>
+	</html>
